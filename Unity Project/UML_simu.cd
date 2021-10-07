@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Player">
+    <Position X="10.25" Y="3.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_statePattern" Type="SimulationStatePattern" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="4.688" />
+        <Point X="8.312" Y="4.688" />
+        <Point X="8.312" Y="4.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.53" Y="0.176" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ruler" Type="Mapbox.CheapRulerCs.CheapRuler">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.26" Y="0.198" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgQhAAAACCAQgQAAAIAAAQCgEEAIAAAAAAAAABCACAA=</HashCode>
+      <FileName>Assets\Scripts\Simulation\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_statePattern" />
+      <Field Name="ruler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraHandler">
+    <Position X="4" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_statePattern" Type="SimulationStatePattern" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.188" Y="5" />
+        <Point X="5.188" Y="4.312" />
+        <Point X="6.5" Y="4.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.844" Y="-0.608" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACSABIAAgIAAIIAAAAAAAACACAAAAAACAAAABABAgEI=</HashCode>
+      <FileName>Assets\Scripts\Simulation\CameraHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_statePattern" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="QuadTreeCamMov">
+    <Position X="5.5" Y="5.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_statePattern" Type="SimulationStatePattern">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.464" Y="0.336" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_map" Type="Mapbox.Unity.Map.AbstractMap">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.321" Y="0.281" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAwAAAwykAoAAAAQQAAAIAKAAAABAAWAAEAAAAAAAFA=</HashCode>
+      <FileName>Assets\Scripts\Simulation\QuadTreeCamMov.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_statePattern" />
+      <Field Name="_map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpawnOnMap">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_map" Type="Mapbox.Unity.Map.AbstractMap">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.265" Y="0.402" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_markerPrefab" Type="UnityEngine.Transform">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.181" Y="-0.111" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAEQAEAAECAAAAAAAAAAEAAAABAAAI=</HashCode>
+      <FileName>Assets\Scripts\SpawnOnMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_map" />
+      <Field Name="_markerPrefab" />
+      <Field Name="_statePattern" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SimulationStatePattern" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="2" />
+    <AssociationLine Name="_markerPrefab" Type="UnityEngine.Transform" FixedFromPoint="true">
+      <Path>
+        <Point X="7.5" Y="3.75" />
+        <Point X="7.5" Y="1.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.514" Y="1.082" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_player" Type="UnityEngine.Transform">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.304" Y="0.43" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_playerCam" Type="UnityEngine.Camera" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="4" />
+        <Point X="9.548" Y="4" />
+        <Point X="9.548" Y="1.846" />
+        <Point X="10.25" Y="1.846" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.198" Y="-0.106" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_mainCam" Type="UnityEngine.Camera" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="4.3" />
+        <Point X="10.025" Y="4.3" />
+        <Point X="10.025" Y="2.459" />
+        <Point X="11.25" Y="2.459" />
+        <Point X="11.25" Y="2.191" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.159" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_svCam" Type="UnityEngine.Camera" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.375" Y="3.75" />
+        <Point X="9.026" Y="3.75" />
+        <Point X="9.026" Y="1.125" />
+        <Point X="10.938" Y="1.125" />
+        <Point X="10.938" Y="1.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.073" Y="0.254" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_visualizer" Type="Mapbox.Unity.Map.AbstractMapVisualizer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="4.441" />
+        <Point X="7.75" Y="4.791" />
+        <Point X="8.137" Y="4.791" />
+        <Point X="8.137" Y="5.151" />
+        <Point X="8.375" Y="5.151" />
+        <Point X="8.375" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.161" Y="0.452" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_map" Type="Mapbox.Unity.Map.AbstractMap">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.309" Y="-0.084" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>MgQb0ByXBboBNCUFOAwUizvBEiCKAQ2AjFg7LQJSB/A=</HashCode>
+      <FileName>Assets\Scripts\Simulation\FSM\SimulationStatePattern.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_markerPrefab" />
+      <Field Name="_player" />
+      <Field Name="_playerCam" />
+      <Field Name="_mainCam" />
+      <Field Name="_svCam" />
+      <Field Name="_visualizer" />
+      <Field Name="_map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.Transform" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.Camera" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Mapbox.Unity.Map.AbstractMapVisualizer" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AMAACEBAIBMAAQAAEAAIKAQAACBGECGgQEkAjABREAA=</HashCode>
+      <FileName>Assets\Mapbox\Unity\Map\AbstractMapVisualizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mapbox.Unity.Map.AbstractMap" Collapsed="true">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hbSB0YAAxaMYTXNUkGAgAUUkANAQJSBUXEPi0A9kjVE=</HashCode>
+      <FileName>Assets\Mapbox\Unity\Map\AbstractMap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mapbox.CheapRulerCs.CheapRuler" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAAAAAAAAAAAAAAAEAAAAAAABEAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Mapbox\Core\cheap-ruler-cs\CheapRuler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
