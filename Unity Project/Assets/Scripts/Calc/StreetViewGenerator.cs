@@ -48,12 +48,12 @@ public class StreetViewGenerator : MonoBehaviour
             UnityWebRequest www = UnityWebRequestTexture.GetTexture(
                 "https://maps.googleapis.com/maps/api/streetview?size=512x512&location=" +
                 _coordinates.x.ToString(CultureInfo.InvariantCulture) + "," + _coordinates.y.ToString(CultureInfo.InvariantCulture) +
-                "&heading=" + _heading[i] + "&pitch=" + _pitch[i] + "&key=AIzaSyBP0njGliiPjbNHxBtfqKzA51hogwCORUg");
+                "&heading=" + _heading[i] + "&pitch=" + _pitch[i] + "&key="); //your key here
 
             //UnityWebRequest www = UnityWebRequestTexture.GetTexture(
             //    "https://maps.googleapis.com/maps/api/streetview?size=512x512&location=" +
             //    _statePattern.FromInputField.text +
-            //    "&heading=" + _heading[i] + "&pitch=" + _pitch[i] + "&key=AIzaSyBP0njGliiPjbNHxBtfqKzA51hogwCORUg");
+            //    "&heading=" + _heading[i] + "&pitch=" + _pitch[i] + "&key=");
 
             www.timeout = 5;
             yield return www.SendWebRequest();
