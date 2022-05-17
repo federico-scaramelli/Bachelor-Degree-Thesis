@@ -6,7 +6,7 @@ My bachelor degree thesis project: "Uno strumento VR basato su Unity per la prop
 
 The tool was developed for Android devices and Cardboard VR visors and is able of:
   - Generate the needed portion of the world on 3D virtual space, keeping the fidelity as high as possible, with buildings and terrain in real-world dimensions.
-  - Simulating the itinerary on the 3D virtual world, with continuous movement along the path and the possibility of rotating the point of view in first person. 
+  - Simulating the itinerary on the 3D virtual world, with continuous movement along the path and the possibility to rotate the point of view in first person. 
   - Generate a 360° street view representation of the point of interest.
   - Switch the simulation from standard view to Virtual Reality view.
 
